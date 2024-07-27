@@ -1,10 +1,14 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment, incrementby5 } from "../redux/counter/counterAction";
+import {
+  decrement,
+  increment,
+  incrementby5,
+} from "../redux/counter/counterAction";
 
 const Counter = () => {
-  const count = useSelector((state) => state.count);
-  const count2 = useSelector((state) => state.count2);
+  const count = useSelector((state) => state.counter.count);
+  const count2 = useSelector((state) => state.counter.count2);
   const dispatch = useDispatch();
 
   return (
@@ -44,6 +48,7 @@ const Counter = () => {
           Decrement
         </button>
         <p>Count is:{count2}</p>
+        <hr />
       </div>
     </>
   );
