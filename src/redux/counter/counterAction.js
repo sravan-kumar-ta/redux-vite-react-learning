@@ -12,8 +12,9 @@ export const decrement = () => {
   };
 };
 
-export const incrementby5 = () => {
+export const incrementby5 = (number) => {
   return {
     type: INCREMENTBY5,
+    payload: number,
   };
 };

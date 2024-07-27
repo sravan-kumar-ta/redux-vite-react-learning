@@ -31,7 +31,7 @@ const Counter = () => {
       <div className="card">
         <button
           onClick={() => {
-            dispatch(incrementby5());
+            dispatch(incrementby5(5));
           }}
         >
           Increment

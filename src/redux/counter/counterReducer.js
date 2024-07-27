@@ -22,7 +22,7 @@ const counterReducer = (state = initialState, action) => {
     case INCREMENTBY5:
       return {
         ...state,
-        count2: state.count2 + 5,
+        count2: state.count2 + action.payload,
       };
 
     default:
