@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../redux/counter/counterAction";
+import { decrement, increment, incrementby5 } from "../redux/counter/counterAction";
 
 const Counter = () => {
   const count = useSelector((state) => state.count);
@@ -31,7 +31,7 @@ const Counter = () => {
       <div className="card">
         <button
           onClick={() => {
-            dispatch(increment());
+            dispatch(incrementby5());
           }}
         >
           Increment

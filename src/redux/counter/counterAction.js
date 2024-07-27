@@ -1,4 +1,4 @@
-import { DECREMENT, INCREMENT } from "./counterTypes";
+import { DECREMENT, INCREMENT, INCREMENTBY5 } from "./counterTypes";
 
 export const increment = () => {
   return {
@@ -9,5 +9,11 @@ export const increment = () => {
 export const decrement = () => {
   return {
     type: DECREMENT,
+  };
+};
+
+export const incrementby5 = () => {
+  return {
+    type: INCREMENTBY5,
   };
 };
